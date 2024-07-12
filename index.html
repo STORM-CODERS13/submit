@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon"  type="x-icon" href="minilogolast.jpeg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <title>Stormcoders | Contact</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+        }
+    .container{
+            min-height: 100vh;
+            background: url(bg3.avif) no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container form{
+            width: 670px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            flex-wrap: wrap;
+        }
+        .container form h1{
+            color: orchid;
+            font-weight: 500;
+            margin-top: 20px;
+            width: 500px;
+            text-align: center;
+        }
+        .container form input{
+            width: 290px;
+            height: 40px;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            margin-bottom: 10px;
+            background: none;
+            border-bottom: 2px solid white;
+
+        }
+        .container form input::placeholder{
+            color: pink;
+        }
+        .container form #lastname,.container form #mobile{
+            margin-left: 20px;
+        }
+        .container form h4{
+            color:pink;
+            font-weight: 300;
+            width: 600px;
+            margin-top: 20px;
+        }
+        .container textarea{
+            background: none;
+            border: none;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            font-weight: 200;
+            font-size: 15px;
+            padding: 10px;
+            outline: none;
+            min-width: 600px;
+            max-width: 600px;
+            min-height: 80px;
+            max-height: 80px;
+        }
+        textarea::-webkit-scrollbar{
+            width: 1em;
+        }
+        textarea::-webkit-scrollbar-thumb{
+            background-color: pink;
+        }
+        .container form #button{
+            border: none;
+            background: pink;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 18px;
+            color:#6d008f ;
+            width: 90px;
+            padding: 0;
+            margin-right: 500px;
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+        .container form #button:hover{
+            transform: scale(1.1);
+            cursor: pointer ;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form  action="https://formsubmit.co/stormcoders13@gmail.com" method="POST">
+            <h1>Contact us</h1>
+            <input type="text" id="firstname" placeholder="First Name" required>
+            <input type="text" id="lastname" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="text" id="mobile" placeholder="Mobile" required>
+            <h4>Write Your Comment...</h4>
+            <textarea required></textarea>
+            <input type="submit" value="Submit" id="button">
+        </form>
+ 
+    </div>
+</body>
+</html>
